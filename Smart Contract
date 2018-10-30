@@ -58,7 +58,7 @@ contract FiatContract
 }
 
 
-contract SteinCoin is ERC20
+contract Lumio Coin is ERC20
 { 
     using SafeMath for uint256;
 
@@ -69,7 +69,7 @@ contract SteinCoin is ERC20
     // Symbol of token
     string public constant symbol = "XLU";
     uint8 public constant decimals = 8;
-    uint public _totalsupply = 82000000 * (uint256(8) ** decimals); // 82 million STCN
+    uint public _totalsupply = 82000000 * (uint256(8) ** decimals); // 82 million XLU
     address public owner;
     bool stopped = false;
     uint256 public startdate;
@@ -151,7 +151,7 @@ contract SteinCoin is ERC20
             if (no_of_tokens >=  2000 * (uint256(10)**decimals) &&
                 no_of_tokens <= 19999 * (uint256(10)**decimals))
             {
-                bonus_token = no_of_tokens.mul(35).div(100); // 35% bonus
+                bonus_token = no_of_tokens.mul(35).div(100); // 
             }
             else if (no_of_tokens >   19999 * (uint256(10)**decimals) &&
                      no_of_tokens <= 149999 * (uint256(10)**decimals))
